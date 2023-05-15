@@ -1,0 +1,332 @@
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^3.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/kayt-ol/images/rectangle-98-bg.png
+    - assets/giri-sayfas/images/rectangle-98-bg-8Bm.png
+    - assets/ana-ekran/images/vector-41.png
+    - assets/ayarlar/images/hansel-bg.png
+    - assets/ana-ekran/images/fatih.png
+    - assets/giri-sayfas/images/icon-google.png
+    - assets/ana-ekran/images/bykekmece.png
+    - assets/ayarlar/images/cog.png
+    - assets/ayarlar/images/status-bar.png
+    - assets/ana-ekran/images/ile.png
+    - assets/hesap/images/rectangle-12.png
+    - assets/ana-ekran/images/vector-45.png
+    - assets/ana-ekran/images/pendik.png
+    - assets/hesap/images/single-on.png
+    - assets/ayarlar/images/eva-arrow-back-fill.png
+    - assets/ana-ekran/images/bayrampaa.png
+    - assets/ana-ekran/images/sariyer.png
+    - assets/ana-ekran/images/esenler.png
+    - assets/ana-ekran/images/vector-37.png
+    - assets/ana-ekran/images/icon.png
+    - assets/ayarlar/images/user.png
+    - assets/ana-ekran/images/vector-29.png
+    - assets/ana-ekran/images/beikta.png
+    - assets/ana-ekran/images/vector-19.png
+    - assets/ana-ekran/images/.png
+    - assets/ayarlar/images/rectangle-12-6Z9.png
+    - assets/ana-ekran/images/auto-group-bjct.png
+    - assets/ana-ekran/images/iphone-st-bar.png
+    - assets/ayarlar/images/eva-edit-2-outline.png
+    - assets/ana-ekran/images/vector-2.png
+    - assets/ana-ekran/images/vector-16.png
+    - assets/ana-ekran/images/gngren.png
+    - assets/ana-ekran/images/vector-6.png
+    - assets/ana-ekran/images/vector-30.png
+    - assets/ana-ekran/images/rectangle-12-SKm.png
+    - assets/ana-ekran/images/tuzla.png
+    - assets/ana-ekran/images/vector-1.png
+    - assets/ana-ekran/images/arnavutky.png
+    - assets/ana-ekran/images/beyolu.png
+    - assets/kayt-ol/images/group-8.png
+    - assets/ana-ekran/images/user-rtK.png
+    - assets/ana-ekran/images/kathane.png
+    - assets/ana-ekran/images/vector-28.png
+    - assets/ana-ekran/images/vector-40.png
+    - assets/ana-ekran/images/beykoz.png
+    - assets/ana-ekran/images/vector-39.png
+    - assets/ana-ekran/images/baakehir.png
+    - assets/ana-ekran/images/cog-S51.png
+    - assets/ana-ekran/images/vector-34.png
+    - assets/ana-ekran/images/eypsultan.png
+    - assets/ana-ekran/images/px-filter.png
+    - assets/ana-ekran/images/maltepe.png
+    - assets/ana-ekran/images/bakrky.png
+    - assets/ana-ekran/images/vector-17.png
+    - assets/ana-ekran/images/zeytinburnu.png
+    - assets/ana-ekran/images/skdar.png
+    - assets/ana-ekran/images/ataehir.png
+    - assets/ana-ekran/images/ekmeky.png
+    - assets/ana-ekran/images/vector-12.png
+    - assets/giri-sayfas/images/icon-apple.png
+    - assets/ana-ekran/images/sultanbeyl.png
+    - assets/ana-ekran/images/vector-13.png
+    - assets/ana-ekran/images/auto-group-ov5m.png
+    - assets/ana-ekran/images/auto-group-rcm9.png
+    - assets/ana-ekran/images/avclar.png
+    - assets/ayarlar/images/mdi-account.png
+    - assets/ana-ekran/images/kkekmece.png
+    - assets/ana-ekran/images/vector-5.png
+    - assets/hesap/images/cog-4WF.png
+    - assets/ana-ekran/images/silivri.png
+    - assets/ana-ekran/images/auto-group-ebwq.png
+    - assets/ana-ekran/images/vector-18.png
+    - assets/ana-ekran/images/vector-15.png
+    - assets/ana-ekran/images/baclar.png
+    - assets/kayt-ol/images/iphone-st-bar-eJf.png
+    - assets/n-yorumlama/images/auto-group-hvfz.png
+    - assets/ana-ekran/images/kartal.png
+    - assets/ana-ekran/images/kadky.png
+    - assets/ana-ekran/images/auto-group-xeuh.png
+    - assets/ana-ekran/images/ili.png
+    - assets/ana-ekran/images/esenyurt.png
+    - assets/hesap/images/-kb5.png
+    - assets/hesap/images/hansel.png
+    - assets/ana-ekran/images/beylikdz.png
+    - assets/ana-ekran/images/vector-35.png
+    - assets/ayarlar/images/-MJT.png
+    - assets/ana-ekran/images/vector-36.png
+    - assets/ana-ekran/images/bahelievler.png
+    - assets/ayarlar/images/ion-chatbox-ellipses-outline.png
+    - assets/n-yorumlama/images/baakehir-Sxb.png
+    - assets/hesap/images/user-6PM.png
+    - assets/ana-ekran/images/sancaktepe.png
+    - assets/n-yorumlama/images/esenler-ncb.png
+    - assets/ana-ekran/images/gaziosmanpaa.png
+    - assets/ana-ekran/images/vector-38.png
+    - assets/ana-ekran/images/vector-4.png
+    - assets/ana-ekran/images/vector-3.png
+    - assets/ana-ekran/images/vector-14.png
+    - assets/ana-ekran/images/atalca.png
+    - assets/ana-ekran/images/mraniye.png
+    - assets/hesap/images/status-bar-Kgw.png
+    - assets/giri-sayfas/images/iphone-st-bar-ynj.png
+    - assets/n-yorumlama/images/sariyer-6Tm.png
+    - assets/n-yorumlama/images/auto-group-xypw.png
+    - assets/n-yorumlama/images/fatih-Ww5.png
+    - assets/n-yorumlama/images/bykekmece-xsV.png
+    - assets/n-yorumlama/images/vector-24.png
+    - assets/n-yorumlama/images/maltepe-xc3.png
+    - assets/n-yorumlama/images/iphone-st-bar-LBm.png
+    - assets/n-yorumlama/images/bahelievler-WWX.png
+    - assets/n-yorumlama/images/vector-27.png
+    - assets/n-yorumlama/images/tuzla-mCf.png
+    - assets/n-yorumlama/images/gaziosmanpaa-LAX.png
+    - assets/n-yorumlama/images/vector-35-iYK.png
+    - assets/n-yorumlama/images/vector-13-eUT.png
+    - assets/n-yorumlama/images/zeytinburnu-B4F.png
+    - assets/n-yorumlama/images/kadky-RRD.png
+    - assets/n-yorumlama/images/ile-bhm.png
+    - assets/n-yorumlama/images/-Sbu.png
+    - assets/n-yorumlama/images/px-filter-hiB.png
+    - assets/n-yorumlama/images/rectangle-12-SVy.png
+    - assets/n-yorumlama/images/vector-17-mNT.png
+    - assets/n-yorumlama/images/avclar-bUw.png
+    - assets/n-yorumlama/images/beylikdz-9mD.png
+    - assets/n-yorumlama/images/ekmeky-SvF.png
+    - assets/n-yorumlama/images/vector-26.png
+    - assets/n-yorumlama/images/esenyurt-HNB.png
+    - assets/n-yorumlama/images/arnavutky-KWs.png
+    - assets/n-yorumlama/images/vector-25.png
+    - assets/n-yorumlama/images/vector-16-f1M.png
+    - assets/n-yorumlama/images/bayrampaa-waT.png
+    - assets/ayarlar/images/ion-notifications.png
+    - assets/n-yorumlama/images/vector-21.png
+    - assets/n-yorumlama/images/beykoz-YCB.png
+    - assets/n-yorumlama/images/gngren-6wD.png
+    - assets/n-yorumlama/images/sultanbeyl-jjH.png
+    - assets/n-yorumlama/images/vector-15-ezf.png
+    - assets/n-yorumlama/images/silivri-o9V.png
+    - assets/n-yorumlama/images/vector-20.png
+    - assets/n-yorumlama/images/icon-nou.png
+    - assets/n-yorumlama/images/sancaktepe-B8f.png
+    - assets/n-yorumlama/images/kartal-XVu.png
+    - assets/n-yorumlama/images/bakrky-Jou.png
+    - assets/n-yorumlama/images/mraniye-Q4j.png
+    - assets/n-yorumlama/images/sultangazi-QiF.png
+    - assets/n-yorumlama/images/kkekmece-8C3.png
+    - assets/n-yorumlama/images/vector-22.png
+    - assets/n-yorumlama/images/user-zwd.png
+    - assets/ana-ekran/images/sultangazi.png
+    - assets/n-yorumlama/images/vector-23.png
+    - assets/n-yorumlama/images/cog-C4K.png
+    - assets/n-yorumlama/images/ataehir-mLX.png
+    - assets/yorumlama/images/star-activated.png
+    - assets/yorumlama/images/star-activated-EX5.png
+    - assets/yorumlama/images/star-activated-pHZ.png
+    - assets/yorumlama/images/photo.png
+    - assets/n-yorumlama/images/vector-36-j2s.png
+    - assets/n-yorumlama/images/beyolu-5fh.png
+    - assets/n-yorumlama/images/vector-14-hcX.png
+    - assets/n-yorumlama/images/pendik-sXR.png
+    - assets/yorumlama/images/icon-AJ7.png
+    - assets/yorumlama/images/star-inactive-big.png
+    - assets/n-yorumlama/images/vector-34-WdZ.png
+    - assets/yorumlama/images/rating-star.png
+    - assets/yorumlama/images/star-inactive.png
+    - assets/yorumlama/images/icon-k3D.png
+    - assets/yorumlama/images/avatar.png
+    - assets/yorumlama/images/star-activated-oLF.png
+    - assets/yorumlama/images/star-activated-big.png
+    - assets/yorumlama/images/rating-star-c5H.png
+    - assets/yorumlama/images/star-activated-XLf.png
+    - assets/n-yorumlama/images/baclar-uNK.png
+    - assets/yorumlama/images/rating-star-full-true.png
+    - assets/yorumlama/images/rating-star-JBm.png
+    - assets/yorumlama/images/photo-xn7.png
+    - assets/yorumlama/images/photo-L1y.png
+    - assets/yorumlama/images/star-activated-ePM.png
+    - assets/yorumlama/images/star-activated-big-3QP.png
+    - assets/yorumlama/images/rating-star-LPV.png
+    - assets/yorumlama/images/photo-GTV.png
+    - assets/yorumlama/images/photo-sCP.png
+    - assets/yorumlama/images/photo-TWj.png
+    - assets/n-yorumlama/images/atalca-VyD.png
+    - assets/yorumlama/images/rating-star-aNX.png
+    - assets/yorumlama/images/rating-star-LnX.png
+    - assets/yorumlama/images/rating-star-e5H.png
+    - assets/yorumlama/images/rating-star-s8P.png
+    - assets/yorumlama/images/photo-n51.png
+    - assets/yorumlama/images/battery.png
+    - assets/yorumlama/images/home-indicator-on-light.png
+    - assets/yorumlama/images/icon-HQX.png
+    - assets/yorumlama/images/rating-star-yo9.png
+    - assets/yorumlama/images/star-inactive-big-tQK.png
+    - assets/yorumlama/images/star-inactive-onB.png
+    - assets/yorumlama/images/mobile-signal.png
+    - assets/yorumlama/images/star-activated-big-Z95.png
+    - assets/yorumlama/images/rating-star-5dD.png
+    - assets/yorumlama/images/star-activated-aro.png
+    - assets/yorumlama/images/rating-star-fNT.png
+    - assets/yorumlama/images/rating-star-Wdy.png
+    - assets/yorumlama/images/wifi.png
+    - assets/yorumlama/images/rating-star-BRd.png
+    - assets/yorumlama/images/photo-7xF.png
+    - assets/yorumlama/images/baseline-photocamera-24px.png
+    - assets/yorumlama/images/rating-star-mT1.png
+    - assets/yorumlama/images/rating-star-HDD.png
+    - assets/yorumlama/images/avatar-QrF.png
+    - assets/yorumlama/images/star-activated-e7d.png
+    - assets/yorumlama/images/star-activated-big-Wyq.png
+    - assets/yorumlama/images/icon-Wqy.png
+    - assets/yorumlama/images/rating-star-gfm.png
+    - assets/yorumlama/images/icon-s5u.png
+    - assets/yorumlama/images/rating-star-ynK.png
+    - assets/yorumlama/images/rating-star-RTH.png
+    - assets/yorumlar/images/star-activated-imh.png
+    - assets/yorumlar/images/mobile-signal-s7q.png
+    - assets/yorumlar/images/battery-Cks.png
+    - assets/yorumlar/images/star-activated-sJb.png
+    - assets/yorumlama/images/rating-star-yGw.png
+    - assets/yorumlar/images/star-activated-GCT.png
+    - assets/yorumlar/images/hannah.png
+    - assets/yorumlar/images/star-activated-XjZ.png
+    - assets/yorumlar/images/auto-group-31nj.png
+    - assets/yorumlar/images/icon-6WX.png
+    - assets/yorumlar/images/star-activated-4HZ.png
+    - assets/yorumlar/images/wifi-YPd.png
+    - assets/yorumlar/images/star-inactive-fuM.png
+    - assets/yorumlar/images/star-activated-gno.png
+    - assets/yorumlar/images/icon-bcF.png
+    - assets/yorumlar/images/star-inactive-fT1.png
+    - assets/yorumlar/images/pngwing-2.png
+    - assets/yorumlar/images/star-activated-Hp7.png
+    - assets/yorumlar/images/pngwing-1.png
+    - assets/yorumlar/images/bakrky-reyhan-sokak-1.png
+    - assets/yorumlar/images/pngwing-4.png
+    - assets/yorumlar/images/pngwing-3.png
+    - assets/yorumlar/images/jonas-bg.png
+    - assets/yorumlar/images/reyhan-1.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
