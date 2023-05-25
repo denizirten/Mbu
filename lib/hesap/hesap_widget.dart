@@ -45,11 +45,11 @@ class _HesapWidgetState extends State<HesapWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFA9C9FB),
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(90.0),
+        preferredSize: Size.fromHeight(70.0),
         child: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+          backgroundColor: Color(0xFFA9C9FB),
           automaticallyImplyLeading: false,
           actions: [],
           flexibleSpace: FlexibleSpaceBar(
@@ -83,20 +83,22 @@ class _HesapWidgetState extends State<HesapWidget> {
                       ),
                     ),
                   ),
-                  Align(
-                    alignment: AlignmentDirectional(-0.1, 0.0),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
-                      child: Text(
-                        'Hesap',
-                        style: FlutterFlowTheme.of(context)
-                            .headlineMedium
-                            .override(
-                              fontFamily: 'Outfit',
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              fontSize: 22.0,
-                            ),
+                  Expanded(
+                    child: Align(
+                      alignment: AlignmentDirectional(-0.1, -1.0),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                        child: Text(
+                          'Hesap',
+                          style: FlutterFlowTheme.of(context)
+                              .headlineMedium
+                              .override(
+                                fontFamily: 'Outfit',
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 22.0,
+                              ),
+                        ),
                       ),
                     ),
                   ),
@@ -197,19 +199,22 @@ class _HesapWidgetState extends State<HesapWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                2.0, 2.0, 2.0, 2.0),
-                            child: Container(
-                              width: 90.0,
-                              height: 90.0,
-                              clipBehavior: Clip.antiAlias,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                              ),
-                              child: Image.asset(
-                                'assets/images/download.png',
-                                fit: BoxFit.fitWidth,
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  2.0, 2.0, 2.0, 2.0),
+                              child: Container(
+                                width: 90.0,
+                                height: 90.0,
+                                clipBehavior: Clip.antiAlias,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Image.asset(
+                                  'assets/images/download.png',
+                                  fit: BoxFit.fitWidth,
+                                ),
                               ),
                             ),
                           ),
@@ -457,13 +462,10 @@ class _HesapWidgetState extends State<HesapWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 1.0),
                           child: Container(
-                            width: 75.0,
                             constraints: BoxConstraints(
                               maxWidth: 75.0,
                             ),
                             decoration: BoxDecoration(
-                              color:
-                                  FlutterFlowTheme.of(context).primaryBtnText,
                               boxShadow: [
                                 BoxShadow(
                                   blurRadius: 0.0,
@@ -471,6 +473,12 @@ class _HesapWidgetState extends State<HesapWidget> {
                                   offset: Offset(0.0, 1.0),
                                 )
                               ],
+                              gradient: LinearGradient(
+                                colors: [Color(0xFFADBACA), Color(0xFF776AE0)],
+                                stops: [0.0, 1.0],
+                                begin: AlignmentDirectional(0.0, -1.0),
+                                end: AlignmentDirectional(0, 1.0),
+                              ),
                               borderRadius: BorderRadius.circular(8.0),
                               border: Border.all(
                                 color: Color(0xFFECEDF1),

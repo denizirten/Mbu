@@ -383,7 +383,7 @@ class _AyarlarWidgetState extends State<AyarlarWidget>
                     await authManager.signOut();
                     GoRouter.of(context).clearRedirectLocation();
 
-                    context.goNamedAuth('KayitOlma', context.mounted);
+                    context.goNamedAuth('GirisSayfasi2', context.mounted);
                   },
                   text: 'Çıkış Yap',
                   options: FFButtonOptions(

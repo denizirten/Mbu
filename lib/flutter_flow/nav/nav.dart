@@ -69,25 +69,15 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
-          appStateNotifier.loggedIn ? GirisSayfasiWidget() : KayitOlmaWidget(),
+          appStateNotifier.loggedIn ? AnaEkranWidget() : GirisSayfasi2Widget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? GirisSayfasiWidget()
-              : KayitOlmaWidget(),
+              ? AnaEkranWidget()
+              : GirisSayfasi2Widget(),
           routes: [
-            FFRoute(
-              name: 'KayitOlma',
-              path: 'kayitOlma',
-              builder: (context, params) => KayitOlmaWidget(),
-            ),
-            FFRoute(
-              name: 'GirisSayfasi',
-              path: 'girisSayfasi',
-              builder: (context, params) => GirisSayfasiWidget(),
-            ),
             FFRoute(
               name: 'AnaEkran',
               path: 'anaEkran',
@@ -102,6 +92,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Hesap',
               path: 'hesap',
               builder: (context, params) => HesapWidget(),
+            ),
+            FFRoute(
+              name: 'GirisSayfasi2',
+              path: 'girisSayfasi2',
+              builder: (context, params) => GirisSayfasi2Widget(
+                renkler: params.getParam('renkler', ParamType.Color),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -273,7 +270,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/kayitOlma';
+            return '/girisSayfasi2';
           }
           return null;
         },
