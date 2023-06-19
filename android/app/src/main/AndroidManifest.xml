@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:label="Travel App"
+        android:label="Muhit"
         tools:replace="android:label"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
@@ -47,7 +47,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="travelapp" android:host="travelapp.com" />
+                <data android:scheme="muhit" android:host="muhit.com" />
             </intent-filter>
 
         </activity>
@@ -57,7 +57,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBoVDFhmXh27vJW-MNEdLWXIuVljI4xdqw"/>
+
 
 
     </application>
