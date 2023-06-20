@@ -47,7 +47,7 @@ class _AccountWidgetState extends State<AccountWidget> {
       key: scaffoldKey,
       backgroundColor: Color(0xFF080E1C),
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60.0),
+        preferredSize: Size.fromHeight(90.0),
         child: AppBar(
           backgroundColor: Color(0xFFF9F9F9),
           automaticallyImplyLeading: false,
@@ -82,7 +82,9 @@ class _AccountWidgetState extends State<AccountWidget> {
                                 size: 30.0,
                               ),
                               onPressed: () async {
-                                context.pop();
+                                context.safePop();
+
+                                context.pushNamed('Settings');
                               },
                             ),
                           ),

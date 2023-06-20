@@ -57,7 +57,7 @@ class _MyCommentsWidgetState extends State<MyCommentsWidget> {
         title: Align(
           alignment: AlignmentDirectional(0.0, 0.0),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 45.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 55.0, 0.0),
             child: Text(
               'Yorumların',
               style: FlutterFlowTheme.of(context).bodyMedium.override(

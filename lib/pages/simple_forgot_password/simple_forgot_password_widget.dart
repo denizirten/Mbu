@@ -59,7 +59,7 @@ class _SimpleForgotPasswordWidgetState
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 20.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 20.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -111,7 +111,7 @@ class _SimpleForgotPasswordWidgetState
             centerTitle: true,
             expandedTitleScale: 1.0,
           ),
-          elevation: 20.0,
+          elevation: 10.0,
         ),
       ),
       body: SafeArea(

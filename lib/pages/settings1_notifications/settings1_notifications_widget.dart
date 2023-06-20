@@ -65,7 +65,7 @@ class _Settings1NotificationsWidgetState
               style: FlutterFlowTheme.of(context).headlineSmall.override(
                     fontFamily: 'Outfit',
                     color: Color(0xFF14181B),
-                    fontSize: 24.0,
+                    fontSize: 22.0,
                     fontWeight: FontWeight.w500,
                   ),
             ),

@@ -1,3 +1,4 @@
+import '/components/modal04_search_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -145,10 +146,35 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
                               ),
                             ),
                           ),
-                          Icon(
-                            Icons.filter_alt_outlined,
-                            color: Colors.black,
-                            size: 24.0,
+                          InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              await showModalBottomSheet(
+                                isScrollControlled: true,
+                                backgroundColor: Colors.transparent,
+                                enableDrag: false,
+                                context: context,
+                                builder: (context) {
+                                  return GestureDetector(
+                                    onTap: () => FocusScope.of(context)
+                                        .requestFocus(_model.unfocusNode),
+                                    child: Padding(
+                                      padding:
+                                          MediaQuery.of(context).viewInsets,
+                                      child: Modal04SearchWidget(),
+                                    ),
+                                  );
+                                },
+                              ).then((value) => setState(() {}));
+                            },
+                            child: Icon(
+                              Icons.filter_alt_outlined,
+                              color: Colors.black,
+                              size: 24.0,
+                            ),
                           ),
                         ],
                       ),
@@ -256,9 +282,9 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
                                                             .fromSTEB(30.0, 0.0,
                                                                 0.0, 20.0),
                                                     child: FFButtonWidget(
-                                                      onPressed: () {
-                                                        print(
-                                                            'Button pressed ...');
+                                                      onPressed: () async {
+                                                        context.pushNamed(
+                                                            'Account');
                                                       },
                                                       text: '',
                                                       options: FFButtonOptions(
@@ -313,9 +339,9 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 10.0),
                                                     child: FFButtonWidget(
-                                                      onPressed: () {
-                                                        print(
-                                                            'Button pressed ...');
+                                                      onPressed: () async {
+                                                        context.pushNamed(
+                                                            'MainScreen');
                                                       },
                                                       text: '',
                                                       options: FFButtonOptions(
@@ -370,9 +396,9 @@ class _MainScreenWidgetState extends State<MainScreenWidget> {
                                                             .fromSTEB(0.0, 0.0,
                                                                 30.0, 20.0),
                                                     child: FFButtonWidget(
-                                                      onPressed: () {
-                                                        print(
-                                                            'Button pressed ...');
+                                                      onPressed: () async {
+                                                        context.pushNamed(
+                                                            'Settings');
                                                       },
                                                       text: '',
                                                       options: FFButtonOptions(

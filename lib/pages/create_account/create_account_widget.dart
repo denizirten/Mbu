@@ -584,7 +584,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth(
+                                      context.pushNamedAuth(
                                           'MainScreen', context.mounted);
                                     },
                                     text: 'Kayıt Ol',

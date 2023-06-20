@@ -69,7 +69,7 @@ class _PreInterpretationWidgetState extends State<PreInterpretationWidget> {
                               alignment: AlignmentDirectional(-1.0, 0.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    12.0, 0.0, 0.0, 0.0),
+                                    12.0, 10.0, 0.0, 0.0),
                                 child: FlutterFlowIconButton(
                                   borderColor: Colors.transparent,
                                   borderRadius: 30.0,
@@ -90,7 +90,7 @@ class _PreInterpretationWidgetState extends State<PreInterpretationWidget> {
                               alignment: AlignmentDirectional(0.0, -1.0),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    36.0, 0.0, 0.0, 0.0),
+                                    50.0, 10.0, 0.0, 0.0),
                                 child: Text(
                                   'Muhit Ön Yorumları',
                                   style: FlutterFlowTheme.of(context)
@@ -98,7 +98,7 @@ class _PreInterpretationWidgetState extends State<PreInterpretationWidget> {
                                       .override(
                                         fontFamily: 'Outfit',
                                         color: Colors.black,
-                                        fontSize: 22.0,
+                                        fontSize: 18.0,
                                         fontWeight: FontWeight.normal,
                                       ),
                                 ),
