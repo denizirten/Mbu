@@ -1,4 +1,4 @@
 # Mbu
 bitirme-projesi
 
-flutter gelistirme undone
+flutter gelistirme done
